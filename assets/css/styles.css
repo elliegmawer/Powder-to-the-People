@@ -16,3 +16,17 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.copyright {
+    text-align: right;
+}
+
+/*---------------------------------------------------------------------section*/
+
+section {
+    min-height: calc(100vh - 220px);
+}
+
+.pin{
+    text-align: center;
+}
