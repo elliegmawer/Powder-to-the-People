@@ -71,43 +71,15 @@
         </div>
     </footer>
 
-    <script>
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 6,
-                center: {
-                    lat: 45.902588,
-                    lng: 6.956840
-                }
-            });
-
-            var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            var locations = [{
-                lat: 40.785091,
-                lng: -73.968285
-            }, {
-                lat: 41.084045,
-                lng: -73.874256
-            }, {
-                lat: 40.754932,
-                lng: -73.984016
-            }];
-            var markers = locations.map(function(location, i) {
-                return new google.maps.Marker({
-                    position: locations,
-                    label: labels[i % labels.length]
-                });
-            });
-
-            var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
-        }
-    </script>
+    
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy37VVxhvd3ojq8lyjSLvMWiGeFdWof_E&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy37VVxhvd3ojq8lyjSLvMWiGeFdWof_E&callback=initMap"></script>
 
 </body>
 

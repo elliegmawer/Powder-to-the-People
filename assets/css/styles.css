@@ -27,6 +27,11 @@ section {
     min-height: calc(100vh - 220px);
 }
 
-.pin{
+.pin {
     text-align: center;
+}
+
+/*------------------------------------------------------------------------maps*/
+#map {
+    min-height: 360px;
 }
